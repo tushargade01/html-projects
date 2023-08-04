@@ -1,0 +1,69 @@
+body{
+  padding: 0%;
+  margin: 0%;
+  width: 100%;
+  background-color: antiquewhite;
+}
+body.active{
+  background-color: rgb(31, 31, 31);
+  color: blanchedalmond;
+}
+.container{
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -160px;
+  bottom: 0;
+  transition: 0.8s;
+}
+.container:hover{
+  width: 180px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+.my-name-logo{
+  font-family: arial;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+.menu-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  list-style: none;
+}
+.menu-item{
+  margin: 5px;
+  padding: 10px;
+}
+.menu-item:hover{
+  background-color: rgb(224, 133, 222);
+  border-radius: 8px;
+}
+.menu-item a{
+  display: flex;
+  align-items: center;
+  justify-content:start;
+  text-transform: capitalize;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  margin-left: 10px;
+}
+span{
+  margin-left: 10px;
+}
+.sun-icon.active{
+  display: none;
+  }
+.moon-icon.active{
+display: none;
+}

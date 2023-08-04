@@ -1,0 +1,133 @@
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.background{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tree{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.girl{
+    position: relative;
+    scale: 0.53;
+    pointer-events: none;
+    animation: animationgirl 15s linear infinite;
+}
+@keyframes animationgirl{
+    0% {
+        transform: translatex(calc(100% + 100vw));
+    }
+    50% {
+        transform: translatex(calc(-100% - 100vw));
+    }
+    50.01% {
+        transform: translatex(calc(-100% - 100vw)) rotateY(180deg);
+    }
+    100% {
+        transform: translatex(calc(100% + 100vw)) rotateY(180deg);
+    }
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -10px;
+    left: -280px;
+    border: solid;
+    background-color: rgba(0, 0, 0, 0.14);
+    padding-top: 5px;
+    padding-right: 50px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    backdrop-filter: blur(13px);
+}
+.login h1{
+    position: relative;
+    left: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inputbox{
+    position: relative;
+    
+}
+.inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 7px 20px;
+    outline: none;
+    font-size: 20px;
+    color: brown;
+    margin-bottom: 20px;
+
+}
+.inputbox ::placeholder{
+    color: coral;
+}
+.submit{
+    
+    cursor: pointer;
+    
+}
+.leavs{
+    position: absolute;
+}
+.set{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.set div{
+    position: absolute;
+    display: block;
+}
+.leavs .set div:nth-child(1){
+    left: 20%;
+    animation: alternate 20s linear infinite;
+}
+.leavs .set div:nth-child(2){
+    left: 50%;
+    animation: alternate 24s linear infinite;
+}
+.leavs .set div:nth-child(3){
+    left: 60%;
+    animation: alternate 13s linear infinite;
+}
+.leavs .set div:nth-child(4){
+    left: 80%;
+    animation: alternate 2s linear infinite;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        top: -10%;
+        transform: translatex(20px) rotate(0 deg);
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        transform: translatex(-20px) rotate(45 deg);
+    }
+    100% {
+        top: 110%;
+        transform: translatex(20px) rotate(225 deg);
+    }
+}

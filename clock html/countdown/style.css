@@ -1,0 +1,121 @@
+body{
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(135deg, rgba(247, 241, 87, 0.533),rgb(1, 25, 212));
+}
+.logo-img{
+  width: 50px;
+  height: 50px;
+}
+.head-section{
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  padding: 5px ;
+  position: fixed;
+  z-index: 1;
+}
+.logo-name{
+  font-size: 24px;
+  font-family: arial;
+  font-weight: bold;
+  color: rgb(18, 222, 202);
+}
+.head-section i{
+  position: fixed;
+  right: 25px;
+}
+.hamb{
+  position: fixed;
+  right: 5px;
+  cursor: pointer;
+}
+.bar{
+  display:block;
+  background-color: rgb(158, 239, 215);
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  border-radius: 1px;
+  transition:all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.hamb.active .bar:nth-child(2){
+  opacity: 0;
+}
+.hamb.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+.hamb.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+.nav-bar{
+  display: none;
+}
+.nav-bar.active{
+  display:block;
+  position: fixed;
+  top: 25px;
+  right: 0;
+  z-index: 2;
+
+}
+.nav-box{
+  list-style: none;
+  margin: 20px;
+}
+.nav-box a{
+  text-decoration: none;
+  background-color: beige;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  font-family: 'Tektur', cursive;
+}
+.main-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto 50px;
+  padding: 10px;
+}
+.input-value{
+  padding: 5px 7px;
+  margin: 2px 5px 4px 5px;
+}
+.make-button-section{
+  margin: 10px;
+}
+.make-button-section button{
+  padding: 5px 10px;
+  background-color: aquamarine;
+  border: 1px solid;
+  border-radius: 3px;
+}
+button:hover{
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+.countdown-time-section span{
+  font-size: 60px;
+}
+.start-reset-section button{
+  padding: 8px 14px;
+  border: 1px solid;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.start-button{
+  background-color: rgb(230, 48, 81);
+}
+.reset-button{
+  background-color: rgb(249, 74, 249);
+} 
+

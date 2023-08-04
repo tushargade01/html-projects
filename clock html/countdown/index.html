@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div>
+    <div class="head-section">
+      <img src="./images/count logo.png" class="logo-img">
+      <p class="logo-name">Countdown</p>
+      <div class="hamb">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+    <ul class="nav-bar">
+      <li class="nav-box">
+        <a class="nav-name">Home</a>
+      </li>
+      <li class="nav-box">
+        <a class="nav-name" href="">Stop Watch</a>
+      </li>
+      <li class="nav-box">
+        <a class="nav-name" href="">Count Down Timer</a>
+      </li>
+    </ul>
+    <div class="main-box">
+      <div class="input-section">
+        <input type="text" placeholder="Enter Hours" class="input-hor input-value">
+      <input type="text" placeholder="Enter Minutes" class="input-min input-value">
+      <input type="text" placeholder="Enter Secounds" class="input-sec input-value">
+      </div>
+      <div class="make-button-section">
+        <button>Make Timer</button>
+      </div>
+      <div class="countdown-time-section">
+        <span class="sp-hour">00</span><span>:</span><span class="sp-min">00</span><span>:</span><span class="sp-sec">00</span>
+      </div>
+      <div class="start-reset-section">
+        <button class="start-button" onclick="settimer()">Start</button>
+        <button class="reset-button" >Reset</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

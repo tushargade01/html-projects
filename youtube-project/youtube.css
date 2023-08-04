@@ -1,0 +1,231 @@
+.header{
+   height: 55px;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 2;
+
+   background-color: white;
+   border-bottom-style: solid;
+   border-bottom-width: 1px;
+   border-bottom-color: rgb(228, 228, 228);
+
+   
+}
+.left
+{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+.hamburger-menu{
+    width: 24px;
+    margin-right: 20px;
+}
+.youtube-logo{
+    width: 95px;
+    
+}
+.middle{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+
+}
+.search-text{
+    flex: 1;
+    padding-right: 190px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: arial;
+    font-size: 15px;
+  
+}
+.search-button{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    height:26px;
+    padding-top: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-bottom: 5px;
+    left: -2px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.tool{
+    position: absolute;
+    font-size: 12px;
+    bottom: -35px;
+    left:660px;
+    margin-top: 75px;
+    font-family: arial;
+    background-color: rgb(234, 234, 234);
+    color: rgb(0, 0, 0);
+    padding: 1%;
+    border-radius: 5px;
+    pointer-events: none;
+    white-space: nowrap;
+    opacity: 0;
+    
+    
+    
+}
+.search-button:hover .tool{
+opacity: 1;
+}
+.voice-search-icon{
+    height: 25px;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    background-color: rgb(201, 201, 201);
+    border-radius: 30px;
+}
+.right{
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    margin-right: 20px;
+    justify-content: space-between;
+    align-items: center;
+    right: 0;
+    flex-shrink: 0;
+
+}
+.right img{
+    width: 25px;
+    height: 25px;
+
+}
+.notification-img{
+    position: relative;
+}
+.notification{
+    font-size: 11px;
+    font-family: arial;
+    position: absolute;
+    background-color: rgb(224, 0, 0);
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 100px;
+    top:0;
+    right:-3px;
+}
+
+.video-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 20px;
+    position: absolute;
+    padding-top: 70px;
+    padding-right: 20px;
+    padding-left: 90px;
+    
+    
+    
+}
+
+.thumbnail{
+    position: relative;
+    width: 100%;
+}
+
+.user-profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.profile-detail{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+   
+}
+.title{
+    font-family: arial;
+    font-weight: bold;
+    overflow: hidden;
+}
+.user-name{
+    color: rgb(101, 101, 101);
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+}
+.user-video-detail{
+    color: rgb(100, 100, 100);
+    font-weight: 400;
+}
+.sidebar{
+    position: fixed;
+    top:55px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 70px;
+    padding-top: 5px;
+    z-index: 100;
+    padding-right: 3px;
+    border-right-color: rgb(228, 228, 228);
+    border-right-width: 1px;
+    border-right-style: solid;
+    
+    
+
+}
+.sidebar-link{
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.sidebar-link:hover{
+    background-color: rgb(224, 224, 224);
+}
+.sidebar img{
+    height: 24px;
+    
+}
+.sidebar div{
+    font-size: 10px;
+    font-family: arial;
+}
+@media (300px<width<720px) {
+    .video-section{
+        grid-template-columns: 1fr;
+    }
+}
+@media (721px<width<900px) {
+    .video-section{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (901px<width<1080px) {
+    .video-section{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
